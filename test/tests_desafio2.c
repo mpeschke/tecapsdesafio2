@@ -7,7 +7,23 @@
 
 void test_unittests_desafio_2(const int lexicalanalyser, const char* sentence)
 {
+    stTelefone telefone = { .action = unknown, .numero = {'\0'} };
 
+    switch(lexicalanalyser)
+    {
+        case 1:// Testa cenário válido para o analisador léxico 'telefonelexicalanalyser'
+        {
+            strcpy(telefone.numero, sentence);
+            BOOL ret = telefonelexicalanalyser(sentence, &telefone);
+            printf("Valor retornado: %s. Número '%s' traduzido para '%s'",
+                   ret == TRUE ? "TRUE" : "FALSE",
+                   sentence,
+                   telefone.numero);
+            break;
+        }
+        default:
+            break;
+    };
 }
 
 int main(int argc, char* argv[])

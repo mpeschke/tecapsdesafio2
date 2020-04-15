@@ -256,7 +256,11 @@ char* platformindependent_terminatorchar(char* buff)
 // Identifica se a string contém apenas os caracteres terminadores de linha
 // (ou CRLF - 'Carriage Return, Line Feed'), tanto pra Linux como pra Windows.
 BOOL platformindependent_str_terminatorchar(char* buff)
-{return (strcmp(buff, LINUXSTREND) == 0) || (strcmp(buff, WINSTREND));}
+{
+    //int shit = strcmp(buff, LINUXSTREND) == 0;
+    //shit =
+    return (strcmp(buff, LINUXSTREND) == 0) || (strcmp(buff, WINSTREND) == 0);
+}
 
 /*
  * fgets, ao contrário da função (insegura) scanf, inclui
