@@ -1,7 +1,13 @@
 /*
 * Desafio 2
 * Matheus Peschke de Azevedo - RA: 20396209
-* Gustavo Caldas de Souza - RA: 21352329
+* Gustavo Caldas de Souza    - RA: 21352329
+* Marcelo                    - RA: 21359738
+*
+* Se você tiver uma conta no Github, envie seu endereço
+* cadastrado no Github para 'mpeschke@gmail.com', para ter
+* acesso ao repositório privado onde está essa solução, estruturada
+* com testes unitários para validação de qualidade.
 */
 #include "tests_desafio2.h"
 
